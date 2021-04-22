@@ -6,7 +6,7 @@ exports.home = (req, res) => {
   res.write("<body>");
   res.write("<h1>Welcome User in the Backend World </h1>");
   res.write(
-    "<form action='/create_user' method='POST'> <input type='text' placeholder='username' name='username' > <button type='submit'>Create Username</button></form>"
+    "<form action='/create_user' method='POST'> <input type='text' placeholder='username' name='username' required > <button type='submit'>Create Username</button></form>"
   );
   res.write("</body>");
   res.write("</html>");
